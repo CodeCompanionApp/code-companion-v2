@@ -21,6 +21,7 @@
     "build": "webpack --config webpack.config.js --progress --colors",
     "dev-server": "webpack-dev-server --config webpack.config.dev.js --colors",
     "electron-dev": "cross-env NODE_ENV=development electron -r babel-register ./main.js",
+    "electron-prod": "cross-env NODE_ENV=production electron -r babel-register ./main.js",
     "start": "concurrently --kill-others \"npm run dev-server\" \"npm run electron-dev\""
   },
   "bin": {

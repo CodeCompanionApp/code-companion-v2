@@ -1,4 +1,5 @@
 import { app, BrowserWindow } from 'electron';
+import { push } from 'react-router-redux';
 import installExtension, { REACT_DEVELOPER_TOOLS, REDUX_DEVTOOLS } from 'electron-devtools-installer';
 
 import path from 'path';
@@ -8,9 +9,7 @@ const isDevelopment = process.env.NODE_ENV === 'development';
 let mainWindow;
 
 function createWindow () {
-  if (isDevelopment) {
-    installExtension([REACT_DEVELOPER_TOOLS, REDUX_DEVTOOLS]);
-  }
+  installExtension([REACT_DEVELOPER_TOOLS, REDUX_DEVTOOLS]);
   mainWindow = new BrowserWindow({ width: 800, height: 600 });
 
   const hotURL = 'http://localhost:8080';
@@ -27,7 +26,8 @@ function createWindow () {
   mainWindow.webContents.on('did-finish-load', () => {
     const appData = app.getPath('appData');
     const appDataPath = path.join(appData, 'code-companion');
-    
+
+    mainWindow.webContents.send('dispatch', push('/'));
     mainWindow.webContents.send('dispatch', {
       type: 'APP_PATHS_LOADED',
       payload: {
