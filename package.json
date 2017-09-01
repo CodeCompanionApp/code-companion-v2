@@ -7,7 +7,8 @@
     "lerna": "^2.1.0"
   },
   "scripts": {
-    "bootstrap": "lerna bootstrap",
-    "clean": "lerna clean --yes"
+    "bootstrap": "lerna bootstrap --hoist",
+    "clean": "lerna clean --yes",
+    "start": "echo 'You probably want to run `yarn start` in the packages/desktop-app directory.'"
   }
 }
