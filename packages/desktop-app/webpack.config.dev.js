@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const config = require('./webpack.config');
+const path = require('path');
 
 config.devtool = 'source-map';
 
@@ -8,8 +9,10 @@ config.entry.app.unshift(
 );
 
 config.devServer = {
-  contentBase: './dist',
   hot: true,
+  historyApiFallback: true,
+  publicPath: 'http://localhost:8080/public/',
+  contentBase: path.join(__dirname, 'public'),
 };
 
 config.plugins.unshift(
