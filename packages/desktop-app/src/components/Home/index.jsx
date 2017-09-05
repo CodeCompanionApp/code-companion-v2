@@ -19,10 +19,10 @@ const Home = ({ lessons }) => (
 
 Home.propTypes = {
   lessons: PropTypes.arrayOf(
-    PropTypes.shape({ name: PropTypes.string, id: PropTypes.string }),
+    PropTypes.shape({ name: PropTypes.string, id: PropTypes.string, path: PropTypes.string }),
   ).isRequired,
 };
 
-const mapStateToProps = state => ({ lessons: state.lessons.lessons });
+const mapStateToProps = state => ({ lessons: Object.values(state.lessons.byId) });
 
 export default connect(mapStateToProps)(Home);

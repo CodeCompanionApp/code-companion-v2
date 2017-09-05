@@ -3,14 +3,22 @@ export const actionTypes = {
 };
 
 const initialState = {
-  lessons: [{ name: 'Welcome to Code Companion', id: '0' }],
+  byId: {},
   loading: true,
+};
+
+const keyById = (items) => {
+  const result = items.reduce((map, obj) => {
+    map[obj.id] = obj;
+    return map;
+  }, {});
+  return result;
 };
 
 export default (state = initialState, action) => {
   switch (action.type) {
     case actionTypes.LESSONS_LOADED:
-      return { ...state, lessons: action.payload.lessons, loading: false };
+      return { ...state, byId: keyById(action.payload.lessons), loading: false };
     default:
       return state;
   }
