@@ -20,19 +20,29 @@ function createWindow () {
   });
   mainWindow.loadURL(isDevelopment ? hotURL : prodURL);
 
+  // Preload Script Path (API for Lessons)
+  const preloadScriptURL = url.format({
+    pathname: path.join(__dirname, 'dist', 'preload.bundle.js'),
+    protocol: 'file:',
+    slashes: true,
+  });
+
   // Open the DevTools.
-  mainWindow.webContents.openDevTools();
+  // mainWindow.webContents.openDevTools();
 
   mainWindow.webContents.on('did-finish-load', () => {
     const appData = app.getPath('appData');
     const appDataPath = path.join(appData, 'code-companion');
 
-    mainWindow.webContents.send('dispatch', push('/'));
+    if (!isDevelopment) {
+      mainWindow.webContents.send('dispatch', push('/'));
+    }
     mainWindow.webContents.send('dispatch', {
       type: 'APP_PATHS_LOADED',
       payload: {
         // appPath: app.getAppPath(),
         appData: appDataPath,
+        preloadScript: preloadScriptURL,
         // userData: app.getPath('userData'),
       },
     });
