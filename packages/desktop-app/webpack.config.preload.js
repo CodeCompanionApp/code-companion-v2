@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    preload: './public/preload.js',
+    preload: './src/preload/index.js',
   },
 
   output: {
