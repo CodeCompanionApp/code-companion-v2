@@ -15,7 +15,6 @@ export default (state = initialState, action) => {
       return {
         ...state,
         appData: action.payload.appData,
-        preloadScript: action.payload.preloadScript,
         loading: false,
       };
     case actionTypes.APP_SETTINGS_LOADED:

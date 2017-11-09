@@ -54,13 +54,6 @@ function createWindow() {
   });
   mainWindow.loadURL(isDevelopment ? hotURL : prodURL);
 
-  // Preload Script Path (API for Lessons)
-  const preloadScriptURL = url.format({
-    pathname: path.join(__dirname, 'dist', 'preload.bundle.js'),
-    protocol: 'file:',
-    slashes: true,
-  });
-
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();
 
@@ -75,10 +68,7 @@ function createWindow() {
     mainWindow.webContents.send('dispatch', {
       type: settingsActionTypes.APP_PATHS_LOADED,
       payload: {
-        // appPath: app.getAppPath(),
         appData: appDataPath,
-        preloadScript: preloadScriptURL,
-        // userData: app.getPath('userData'),
       },
     });
     mainWindow.webContents.send('dispatch', {
