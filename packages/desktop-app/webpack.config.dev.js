@@ -4,9 +4,7 @@ const path = require('path');
 
 config.devtool = 'source-map';
 
-config.entry.app.unshift(
-  'react-hot-loader/patch',
-);
+config.entry.app.unshift('react-hot-loader/patch');
 
 config.devServer = {
   hot: true,

@@ -1,16 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
+
+import Button from '../Button';
+
+const lessonOverviewContainerStyle = {
+
+};
 
 const LessonOverview = ({ lesson }) => (
-  <div>
-    <h4>{lesson.name}</h4>
-    <pre><code>{JSON.stringify(lesson, null, 4)}</code></pre>
-    <ul>
-      <li><Link to={`/lesson/${lesson.id}/start`}>Start lesson</Link></li>
-      <li><Link to="/">Back home</Link></li>
-    </ul>
+  !lesson ? <div>Loading...</div> :
+  <div style={lessonOverviewContainerStyle}>
+    <p>Lesson: {lesson.name}</p>
+    <Button to={`/lesson/${lesson.id}/start`}>
+      Start Lesson
+    </Button>
   </div>
 );
 
@@ -19,7 +23,11 @@ LessonOverview.propTypes = {
     name: PropTypes.string,
     id: PropTypes.string,
     path: PropTypes.string,
-  }).isRequired,
+  }),
+};
+
+LessonOverview.defaultProps = {
+  lesson: null,
 };
 
 const mapStateToProps = (state, { match }) => ({

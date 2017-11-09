@@ -1,0 +1,18 @@
+0 silly input []
+1 silly flags { _: [ 'bootstrap' ], args: [] }
+2 verbose rootPath /Users/hamstu/projects/code-companion2
+3 info version 2.4.0
+4 silly existsSync /Users/hamstu/projects/code-companion2/VERSION
+5 error EPACKAGES Errored while collecting packages and package graph
+6 error JSONError: Unexpected token 'u' at 42:6 in packages/desktop-app/package.json
+6 error     "util.promisify": "1.0.0"
+6 error      ^
+6 error     at module.exports (/Users/hamstu/projects/code-companion2/node_modules/lerna/node_modules/read-pkg/node_modules/parse-json/index.js:27:17)
+6 error     at parse (/Users/hamstu/projects/code-companion2/node_modules/lerna/node_modules/read-pkg/node_modules/load-json-file/index.js:8:29)
+6 error     at Function.module.exports.sync.fp [as sync] (/Users/hamstu/projects/code-companion2/node_modules/lerna/node_modules/read-pkg/node_modules/load-json-file/index.js:11:29)
+6 error     at Function.module.exports.sync (/Users/hamstu/projects/code-companion2/node_modules/lerna/node_modules/read-pkg/index.js:40:25)
+6 error     at /Users/hamstu/projects/code-companion2/node_modules/lerna/lib/PackageUtilities.js:129:47
+6 error     at Array.forEach (<anonymous>)
+6 error     at /Users/hamstu/projects/code-companion2/node_modules/lerna/lib/PackageUtilities.js:123:86
+6 error     at Array.forEach (<anonymous>)
+6 error     at Function.getPackages (/Users/hamstu/projects/code-companion2/node_modules/lerna/lib/PackageUtilities.js:122:22)

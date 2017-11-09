@@ -19,12 +19,20 @@ class Lesson extends Component {
   constructor() {
     super();
     this.openLessonDevTools = this.openLessonDevTools.bind(this);
+    this.onWebViewReady = this.onWebViewReady.bind(this);
+  }
+  componentDidMount() {
+    setTimeout(() => this.onWebViewReady(), 200);
   }
   componentDidUpdate() {
+    this.onWebViewReady();
     if (this.webview) {
-      this.webview.addEventListener('dom-ready', () => {
-        // this.openLessonDevTools();
-      });
+      this.webview.addEventListener('dom-ready', this.onWebViewReady);
+    }
+  }
+  onWebViewReady() {
+    if (this.webview) {
+      this.webview.send('boot', this.props.lesson);
     }
   }
   openLessonDevTools() {
@@ -36,7 +44,12 @@ class Lesson extends Component {
         ref={(webview) => { this.webview = webview; }}
         id="foo"
         src={getLessonSrc(this.props.lesson)}
-        style={{ display: 'inline-flex', width: '780px', height: '470px', border: '1px solid #ccc' }}
+        style={{
+          display: 'inline-flex',
+          width: '780px',
+          height: '470px',
+          border: '1px solid #ccc',
+        }}
         preload={this.props.preload}
       /> : <p>Loading...</p>;
   }
@@ -44,7 +57,6 @@ class Lesson extends Component {
     return (
       <div>
         <p>
-          This is a lesson!
           <button onClick={this.openLessonDevTools}>
             Open DevTools for Lesson
           </button>
@@ -60,8 +72,13 @@ Lesson.propTypes = {
     name: PropTypes.string,
     id: PropTypes.string,
     path: PropTypes.string,
-  }).isRequired,
-  preload: PropTypes.string.isRequired,
+  }),
+  preload: PropTypes.string,
+};
+
+Lesson.defaultProps = {
+  lesson: null,
+  preload: null,
 };
 
 const mapStateToProps = (state, { match }) => ({

@@ -1,1 +1,4 @@
-setTimeout(() => { document.write('This is how a preload is done.'); }, 2000);
+const { remote } = require('electron');
+
+window.remote = remote;
+window.lessonApi = () => require.resolve('code-companion-lesson-api');

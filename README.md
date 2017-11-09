@@ -6,7 +6,7 @@ Learn to code.
 
 We're using [https://lernajs.io/](Lerna) to more easily manage this monorepo.
 
-Clone this repository and run `npm run bootstrap` or `yarn run bootstrap` to kickstart installation of each package's `node_modules`.
+Clone this repository and run `yarn` and then `yarn run bootstrap` to kickstart installation of each package's `node_modules`.
 
 # Packages
 

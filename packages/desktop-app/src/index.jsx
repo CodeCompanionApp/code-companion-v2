@@ -7,6 +7,8 @@ import { ConnectedRouter as Router } from 'react-router-redux';
 import App from './components/App';
 import makeStore, { history } from './store';
 
+import './main.css';
+
 const store = makeStore();
 
 const renderApp = (AppComponent) => {

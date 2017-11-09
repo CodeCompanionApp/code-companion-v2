@@ -1,17 +1,20 @@
 import React from 'react';
-import { Route, Link, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 import Home from '../Home';
 import LessonOverview from '../LessonOverview';
 import Lesson from '../Lesson';
 import About from '../About';
+import HeaderNavBar from '../HeaderNavBar';
+
+const appContainerStyle = {
+  display: 'flex',
+  flexDirection: 'column',
+};
 
 export default () => (
-  <div>
-    <b>Menu: </b>
-    <Link to="/">Home</Link> •&nbsp;
-    <Link to="/about">About</Link>
-    <hr />
+  <div style={appContainerStyle}>
+    <HeaderNavBar />
     <Switch>
       <Route exact path="/lesson/:lessonId" component={LessonOverview} />
       <Route exact path="/lesson/:lessonId/start" component={Lesson} />
