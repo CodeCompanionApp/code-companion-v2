@@ -3,6 +3,7 @@ import React from 'react';
 const headerNavBarContainerStyle = {
   background: '#29272e',
   WebkitAppRegion: 'drag',
+  WebKitUserSelect: 'none',
   height: '30px',
   textAlign: 'center',
 };

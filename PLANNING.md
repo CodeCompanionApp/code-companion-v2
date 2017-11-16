@@ -6,18 +6,34 @@ Code Companion is a simple desktop application that teaches you programming and 
 
 ## Application Goals
 
-For the first version of Code Companion we'll focus on having pre-installed lessons.
+For the first version of Code Companion the focus is on being able to view and run pre-installed lessons. Future versions will include features such as a lesson directory, user accounts, and even paid content.
 
-A user can...
+## Stories
 
-1. View lessons
-2. Start a lesson (creates a new lesson workspace, i.e., directory)
-3. Continue from an existing workspace
-4. Discard lesson workspaces
+0. I can start the app and choose a directory for my workspaces
+1. I can view available lessons and lessons in progress
+2. I can start a lesson with a new workspace (directory)
+    - I can edit code with a real editor
+    - I am taken to the next step as I progress through the lesson content
+    - I can see a persistent display on the screem with my next step
+3. I can continue from an existing workspace and resume where I left off
+4. I can delete an existing lesson workspace
 
 ## How lessons work
 
-- Lessons are plain Markdown formatted files.
-- Lesson files are divided into slides
+A lesson is a directory containing the following:
 
-##
+- **manifest.json**: A JSON file containing metadata for the lesson
+- **lesson.md**: The lesson content in a special Markdown format (see below)
+- **assets/**: A subdirectory of images and other assets (optional)
+- **index.js**: A script for the logic of the lesson (optional)
+
+### The Markdown format
+
+Each lesson is written in a simple Markdown format, parsed by the `remarkable` node package. The lesson will be divided into slides by a separator `---`, with each slide showing in sequential order.
+
+Elements of a lesson:
+
+- Each slide has a title, text & images (optional), and a previous / next button
+- Some slides have a pre-condition before you can continue to the next step
+- Each slide can (should?) have content that will show in the 'HUD' / always visible overlay.

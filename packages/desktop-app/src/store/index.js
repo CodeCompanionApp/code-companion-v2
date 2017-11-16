@@ -5,6 +5,7 @@ import createHistory from 'history/createBrowserHistory';
 import createReducer from './reducers';
 import ipcMiddleware from './middleware/ipc';
 import lessonsMiddleware from './middleware/lessons';
+import settingsMiddleware from './middleware/settings';
 
 export const history = createHistory();
 
@@ -18,6 +19,7 @@ const makeStore = () => {
         routerMiddleware(history),
         ipcMiddleware,
         lessonsMiddleware,
+        settingsMiddleware,
       ),
       window.devToolsExtension ? window.devToolsExtension() : f => f,
     ),

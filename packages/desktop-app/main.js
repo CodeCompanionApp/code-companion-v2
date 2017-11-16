@@ -1,46 +1,18 @@
 
-import { app, BrowserWindow } from 'electron';
+import { app, ipcMain, BrowserWindow } from 'electron';
 import { push } from 'react-router-redux';
 import installExtension, { REDUX_DEVTOOLS } from 'electron-devtools-installer';
 
 import path from 'path';
 import url from 'url';
-import fs from 'fs';
-import promisify from 'util.promisify';
 
 import { actionTypes as settingsActionTypes } from './src/store/reducers/settings';
-
-// Promisify node fs functions
-const asyncWriteFile = promisify(fs.writeFile);
-const asyncReadFile = promisify(fs.readFile);
+import settings from './lib/settings';
 
 const isDevelopment = process.env.NODE_ENV === 'development';
 
 let mainWindow;
-
-async function loadOrCreateSettings(settingsFile) {
-  let contents;
-  let file;
-  try {
-    file = await asyncReadFile(settingsFile);
-    contents = file.toString();
-  } catch (e) {
-    console.log('Could not read settings file, creating...'); // eslint-disable-line
-    try {
-      await asyncWriteFile(settingsFile, '{}');
-      contents = '{}';
-    } catch (err) {
-      console.error('Could not write settings file!', err); // eslint-disable-line
-      return {};
-    }
-  }
-  try {
-    return JSON.parse(contents);
-  } catch (e) {
-    console.error('Unable to parse settings file JSON', e); // eslint-disable-line
-    return {};
-  }
-}
+let workerWindow;
 
 function createWindow() {
   installExtension([REDUX_DEVTOOLS]);
@@ -60,35 +32,69 @@ function createWindow() {
   mainWindow.webContents.on('did-finish-load', async () => {
     const appData = app.getPath('appData');
     const appDataPath = path.join(appData, 'code-companion');
+    const defaultWorkspacePath = path.join(app.getPath('home'), 'code-companion');
     const appSettingsPath = path.join(appData, 'code-companion', 'settings.json');
+    const settingsObj = await settings.loadOrCreate(appSettingsPath);
 
-    if (!isDevelopment) {
-      mainWindow.webContents.send('dispatch', push('/'));
-    }
     mainWindow.webContents.send('dispatch', {
       type: settingsActionTypes.APP_PATHS_LOADED,
       payload: {
         appData: appDataPath,
+        defaultWorkspacePath,
       },
     });
     mainWindow.webContents.send('dispatch', {
       type: settingsActionTypes.APP_SETTINGS_LOADED,
       payload: {
-        settings: loadOrCreateSettings(appSettingsPath),
+        settings: settingsObj,
       },
     });
+    if (!settingsObj.workspacePath) {
+      mainWindow.webContents.send('dispatch', push('/onboarding'));
+    } else if (!isDevelopment) {
+      mainWindow.webContents.send('dispatch', push('/'));
+    }
+    ipcMain.on('action', (event, action) => {
+      if (action.type === settingsActionTypes.SAVE_SETTINGS) {
+        console.log('main got SAVE_SETTINGS', action);
+        settings.save(appSettingsPath, action.settings);
+      }
+    });
+    ipcMain.on('load-lesson', (event, lesson) => {
+      global.workerWindow.webContents.send('load-lesson', lesson);
+    });
   });
-
-  /* ipcMain.on('action', (event, action) => {
-    console.log(action);
-  }); */
 
   mainWindow.on('closed', () => {
     mainWindow = null;
   });
 }
 
-app.on('ready', createWindow);
+function createWorkerWindow() {
+  global.workerWindow = new BrowserWindow({
+    show: false,
+    webPreferences: {
+      preload: path.join(__dirname, 'preload-worker.js'),
+      nodeIntegration: false,
+      // sandbox: true,
+      contextIsolation: true,
+    },
+  });
+  const workerHtml = url.format({
+    pathname: path.join(__dirname, 'public', 'worker.html'),
+    protocol: 'file:',
+    slashes: true,
+  });
+  global.workerWindow.loadURL(workerHtml);
+  global.workerWindow.webContents.on('did-finish-load', () => {
+    global.workerWindow.webContents.openDevTools();
+  });
+}
+
+app.on('ready', () => {
+  createWorkerWindow();
+  createWindow();
+});
 
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {

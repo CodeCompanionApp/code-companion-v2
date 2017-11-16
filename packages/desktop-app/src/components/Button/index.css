@@ -1,0 +1,14 @@
+.button {
+    font-family: Barlow;
+    font-size: inherit;
+    background: #2196F3;
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    padding: 0.25rem 2rem;
+    outline: none;
+    &[disabled] {
+        pointer-events: none;
+        background: #ccc;
+    }
+}

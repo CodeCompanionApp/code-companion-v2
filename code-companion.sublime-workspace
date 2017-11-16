@@ -1,0 +1,1738 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"dir",
+				"dirNames"
+			],
+			[
+				"dire",
+				"directoryGlob"
+			],
+			[
+				"work",
+				"workspacePath"
+			],
+			[
+				"wo",
+				"workspacePath"
+			],
+			[
+				"key",
+				"keyboardDirection\t(index.jsx)"
+			],
+			[
+				"move",
+				"moveToPost"
+			],
+			[
+				"hover",
+				"hoverIndex"
+			],
+			[
+				"keybo",
+				"keyboardDirection"
+			],
+			[
+				"keyb",
+				"keyboardDirection"
+			],
+			[
+				"ke",
+				"keyboardDirection\t(reducer.js)"
+			],
+			[
+				"com",
+				"commit"
+			],
+			[
+				"tran",
+				"transform\t(index.jsx)"
+			],
+			[
+				"is",
+				"isFixed"
+			],
+			[
+				"que",
+				"queue_paused\t(middleware.js)"
+			],
+			[
+				"PROF",
+				"PROFILE_UNPAUSED\t(middleware.js)"
+			],
+			[
+				"P",
+				"PROFILE_PAUSED\t(middleware.js)"
+			],
+			[
+				"pub",
+				"publish-profile-sidebar\t(index.js)"
+			],
+			[
+				"profSi",
+				"profileSidebarActions"
+			],
+			[
+				"PSUE",
+				"PUSHER_PROFILE_PAUSED_STATE\t(reducer.js)"
+			],
+			[
+				"profi",
+				"profile"
+			],
+			[
+				"prof",
+				"profiles\t(index.js)"
+			],
+			[
+				"noti",
+				"notifications\t(middleware.js)"
+			],
+			[
+				"FET",
+				"FETCH_SUCCESS"
+			],
+			[
+				"dataF",
+				"dataFetchActionTypes"
+			],
+			[
+				"PUSH",
+				"PUSHER_PROFILE_PAUSED_STATE\t(reducer.js)"
+			],
+			[
+				"profileSid",
+				"profileSidebarActionTypes\t(middleware.js)"
+			],
+			[
+				"prfiSi",
+				"profileSidebarActionTypes"
+			],
+			[
+				"act",
+				"actionType"
+			],
+			[
+				"PAU",
+				"PROFILE_PAUSED\t(reducer.js)"
+			],
+			[
+				"chan",
+				"channel"
+			],
+			[
+				"dataFe",
+				"dataFetchActionTypes"
+			],
+			[
+				"pause",
+				"pauseQueue"
+			],
+			[
+				"action",
+				"actionTypes"
+			],
+			[
+				"pasue",
+				"paused"
+			],
+			[
+				"on",
+				"onUnpauseClick"
+			],
+			[
+				"profile",
+				"publish-profile-sidebar\t(reducer.js)"
+			],
+			[
+				"profileSi",
+				"profileSidebarActionTypes\t(reducer.js)"
+			],
+			[
+				"QUe",
+				"QueuePauseBar"
+			],
+			[
+				"Que",
+				"QueuePauseBar\t(index.jsx)"
+			],
+			[
+				"Qe",
+				"QueuePauseBar\t(index.jsx)"
+			],
+			[
+				"pa",
+				"paused"
+			],
+			[
+				"curI",
+				"currentIndex"
+			],
+			[
+				"fina",
+				"finalPosts"
+			],
+			[
+				"curre",
+				"currentOrder"
+			],
+			[
+				"fix",
+				"fixedValues"
+			],
+			[
+				"order",
+				"orderedPosts"
+			],
+			[
+				"new",
+				"newIndex"
+			],
+			[
+				"qu",
+				"queueActionTypes"
+			],
+			[
+				"orde",
+				"orderedPosts"
+			],
+			[
+				"ordered",
+				"orderedPosts\t(reducer.js)"
+			],
+			[
+				"actio",
+				"actionTypes"
+			],
+			[
+				"reord",
+				"reorderPosts\t(index.js)"
+			],
+			[
+				"cur",
+				"currentOffset"
+			],
+			[
+				"drag",
+				"draggingPost"
+			],
+			[
+				"origi",
+				"originalIndex"
+			],
+			[
+				"fixed",
+				"fixedPost"
+			],
+			[
+				"all",
+				"allowed"
+			],
+			[
+				"sche",
+				"scheduled_at\t(postParser.js)"
+			],
+			[
+				"can",
+				"canDrop"
+			],
+			[
+				"POS_D",
+				"POST_DROPPED"
+			],
+			[
+				"hand",
+				"handlePostDropped"
+			],
+			[
+				"Tes",
+				"TestContextContainer"
+			],
+			[
+				"Dra",
+				"DragDropContext"
+			],
+			[
+				"Drag",
+				"DragDropContext\t(index.jsx)"
+			],
+			[
+				"item",
+				"itemList"
+			],
+			[
+				"Q",
+				"QueueItems\t(index.jsx)"
+			],
+			[
+				"rened",
+				"renderHeader"
+			],
+			[
+				"publ",
+				"publish-shared-components\t(index.jsx)"
+			],
+			[
+				"hov",
+				"hoverIndex\t(index.jsx)"
+			],
+			[
+				"post",
+				"postProps"
+			],
+			[
+				"dragg",
+				"draggable"
+			],
+			[
+				"drop",
+				"droppedOnPost"
+			],
+			[
+				"POST",
+				"POST_SENT"
+			],
+			[
+				"dis",
+				"dispatch\t(index.js)"
+			],
+			[
+				"Post",
+				"PostComponent"
+			],
+			[
+				"pad",
+				"paddingLeft\t(index.jsx)"
+			],
+			[
+				"calc",
+				"calculateElementWidth"
+			],
+			[
+				"PostDr",
+				"PostDragLayer\t(index.jsx)"
+			],
+			[
+				"Posrt",
+				"PostDragWrapper"
+			],
+			[
+				"tra",
+				"transitionAnimationTime\t(animation.js)"
+			],
+			[
+				"trans",
+				"transitionAnimationType\t(animation.js)"
+			],
+			[
+				"dra",
+				"draggingPlaceholder"
+			],
+			[
+				"dar",
+				"dragging"
+			],
+			[
+				"onMou",
+				"onMouseLeave"
+			],
+			[
+				"onM",
+				"onMouseEnter"
+			],
+			[
+				"onMo",
+				"onMouseLeave"
+			],
+			[
+				"Text",
+				"TextPost"
+			],
+			[
+				"TE",
+				"TextPost"
+			],
+			[
+				"mar",
+				"marginRight"
+			],
+			[
+				"marg",
+				"marginLeft"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"subt",
+				"subtitleStyle"
+			],
+			[
+				"handle",
+				"handleMouseLeave\t(index.jsx)"
+			],
+			[
+				"side",
+				"sidebarIcon\t(color.js)"
+			],
+			[
+				"si",
+				"sidebarBackgroundBlue"
+			],
+			[
+				"prop",
+				"prop-types\t(index.jsx)"
+			],
+			[
+				"Popo",
+				"PopoverMenuItem"
+			],
+			[
+				"Popve",
+				"PopoverMenu"
+			],
+			[
+				"Buff",
+				"BufferLogo"
+			],
+			[
+				"cons",
+				"constructor\t(index.jsx)"
+			],
+			[
+				"foc",
+				"focused"
+			],
+			[
+				"fc",
+				"focusedIndex"
+			],
+			[
+				"focu",
+				"focusedIndex"
+			],
+			[
+				"tab",
+				"tabIndex"
+			],
+			[
+				"aria-",
+				"aria-expanded\t(index.jsx)"
+			],
+			[
+				"menu",
+				"menuitem\t(index.jsx)"
+			],
+			[
+				"defau",
+				"defaultProps\t(index.jsx)"
+			],
+			[
+				"pop",
+				"popoverMenuListStyle"
+			],
+			[
+				"ext",
+				"extraPadding\t(index.jsx)"
+			],
+			[
+				"ex",
+				"extraPadding"
+			],
+			[
+				"icon",
+				"iconWrapperStyle"
+			],
+			[
+				"PopO",
+				"PopoverButton\t(index.jsx)"
+			],
+			[
+				"pos",
+				"positionBelow"
+			],
+			[
+				"posi",
+				"positionTop"
+			],
+			[
+				"one",
+				"oneLine"
+			],
+			[
+				"onMouse",
+				"onMouseLeaveTimeout"
+			],
+			[
+				"mouse",
+				"onMouseLeave"
+			],
+			[
+				"rel",
+				"relative\t(index.jsx)"
+			],
+			[
+				"hove",
+				"hoveredOrActive"
+			],
+			[
+				"Por",
+				"ProductButton"
+			],
+			[
+				"bor",
+				"border\t(index.jsx)"
+			],
+			[
+				"margin",
+				"marginBottom"
+			],
+			[
+				"Prop",
+				"PropTypes"
+			],
+			[
+				"acr",
+				"activeProduct"
+			],
+			[
+				"pars",
+				"parseColor"
+			],
+			[
+				"borde",
+				"borderRadius"
+			],
+			[
+				"ac",
+				"active"
+			],
+			[
+				"BUffer",
+				"BufferIcon"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "packages/desktop-app/src/store/middleware/lessons.js",
+			"settings":
+			{
+				"buffer_size": 3931,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "lc",
+		"selected_items":
+		[
+			[
+				"lc",
+				"File: Locate"
+			],
+			[
+				"locate",
+				"File: Locate"
+			],
+			[
+				"loc",
+				"File: Locate"
+			],
+			[
+				"lint",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"saces",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"conver",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				"linter",
+				"SublimeLinter: Next Error"
+			],
+			[
+				"debug",
+				"SublimeLinter: Enable Debug Mode"
+			],
+			[
+				"conv",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"ren",
+				"Emmet: Rename Tag"
+			],
+			[
+				"dup",
+				"File: Duplicate"
+			],
+			[
+				"lo",
+				"File: Locate"
+			],
+			[
+				"l",
+				"File: Locate"
+			],
+			[
+				"config",
+				"Set Syntax: EditorConfig"
+			],
+			[
+				"shell",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"enable lin",
+				"SublimeLinter: Enable Linter"
+			],
+			[
+				"del",
+				"File: Delete"
+			],
+			[
+				"locat",
+				"File: Locate"
+			],
+			[
+				"reve",
+				"File: Reveal"
+			],
+			[
+				"b",
+				"Github: Blame"
+			],
+			[
+				"bla",
+				"Github: Blame"
+			],
+			[
+				"babe",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"bab",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"fix",
+				"Build With: eslint-fix"
+			],
+			[
+				"github",
+				"Github: Repository"
+			],
+			[
+				"prett",
+				"JsPrettier: Format JavaScript"
+			],
+			[
+				"Prettier",
+				"JsPrettier: Format JavaScript"
+			],
+			[
+				"prettier",
+				"JsPrettier: Format JavaScript"
+			],
+			[
+				"pretter",
+				"JsPrettier: Format JavaScript"
+			],
+			[
+				"grunt",
+				"Set Syntax: Gruntfile JS"
+			],
+			[
+				"babel",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"copy p",
+				"File: Copy Path"
+			],
+			[
+				"json",
+				"JsonTree: Show Tree"
+			],
+			[
+				"eslint",
+				"ESLint Formatter: Format this file"
+			],
+			[
+				"cop",
+				"File: Copy Path From Project"
+			],
+			[
+				"form",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"format",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"debu",
+				"SublimeLinter: Disable Debug Mode"
+			],
+			[
+				"lint thi",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"choose",
+				"SublimeLinter: Choose Gutter Theme"
+			],
+			[
+				"rena",
+				"File: Rename"
+			],
+			[
+				"blame",
+				"Github: Blame"
+			],
+			[
+				"docker",
+				"Set Syntax: Dockerfile"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"jspre",
+				"JsPrettier: Format JavaScript"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"js",
+				"Set Syntax: JSON"
+			],
+			[
+				"text",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"pack li",
+				"Package Control: List Packages"
+			],
+			[
+				"f",
+				"Pretty JSON: Format and Sort JSON"
+			],
+			[
+				"blam",
+				"Github: Blame"
+			],
+			[
+				"loct",
+				"File: Locate"
+			],
+			[
+				"dupl",
+				"File: Duplicate"
+			],
+			[
+				"lcoate",
+				"File: Locate"
+			],
+			[
+				"mov",
+				"File: Move"
+			],
+			[
+				" balme",
+				"Github: Blame"
+			],
+			[
+				"g",
+				"Github: Blame"
+			],
+			[
+				"compare ag",
+				"GitGutter: Compare Against HEAD"
+			],
+			[
+				"gitgu",
+				"GitGutter: Compare Against Origin"
+			],
+			[
+				"gitgut",
+				"GitGutter: Compare Against File Commit"
+			],
+			[
+				"gitgutt",
+				"GitGutter: Show Diff Popup"
+			],
+			[
+				"ja",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"yam",
+				"Set Syntax: YAML"
+			],
+			[
+				"gi",
+				"Github: Blame"
+			],
+			[
+				"mark",
+				"Set Syntax: Markdown Extended"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"new vi",
+				"File: New View into File"
+			],
+			[
+				"con",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				"loca",
+				"File: Locate"
+			],
+			[
+				"du",
+				"File: Duplicate"
+			],
+			[
+				"renam",
+				"File: Rename"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"consp",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"d",
+				"File: Duplicate"
+			],
+			[
+				"ma",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"insa",
+				"Package Control: Install Package"
+			],
+			[
+				"les",
+				"Set Syntax: Less"
+			],
+			[
+				"revea",
+				"File: Reveal"
+			],
+			[
+				"sho",
+				"GitGutter: Show Diff Popup"
+			],
+			[
+				"show",
+				"GitGutter: Show Diff Popup"
+			],
+			[
+				"diff",
+				"GitGutter: Show Diff Popup"
+			],
+			[
+				"less",
+				"Set Syntax: Less"
+			],
+			[
+				"insat",
+				"Package Control: Install Package"
+			],
+			[
+				"rean",
+				"Emmet: Rename Tag"
+			]
+		],
+		"width": 444.0
+	},
+	"console":
+	{
+		"height": 177.0,
+		"history":
+		[
+			"put \"hello\"",
+			"prints \"Hello\"",
+			"print \"Hello\"",
+			"41 + 38 + 76 + 66 ",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/hamstu/projects/code-companion2"
+	],
+	"file_history":
+	[
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/queue/middleware.test.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/package.json",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/shared-components/PostDragWrapper/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/queue/reducer.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/shared-components/PostDragLayer/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/utils/postParser.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/server/index.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/queue/index.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/pusher-sync/middleware.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/profile-sidebar/components/ProfileBadge/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/server/rpc/index.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/pusher-sync/middleware.test.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/profile-sidebar/middleware.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/settings/reducer.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/queue/index.test.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/profile-sidebar/reducer.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/shared-components/PostList/test.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/queue/components/QueuedPosts/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/settings/components/ProfileSettings/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/queue/components/QueuePausedBar/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/server/rpc/pauseQueue/index.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/settings/index.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/queue/middleware.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/async-data-fetch/middleware.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/server/middleware.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/queue/components/QueuedPosts/story.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/queue/components/QueuePausedBar/story.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/profile-sidebar/package.json",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/notifications/middleware.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/queue/.storybook/config.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/queue/.storybook/webpack.config.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/utils/profileParser.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/composer/components/css/Profile.css",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/server/rpc/reorderPosts/index.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/components/Card/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/shared-components/TextPost/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/shared-components/Post/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/shared-components/VideoPost/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/composer/stores/AppStore.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/queue/components/QueueItems/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/shared-components/MultipleImagesPost/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/shared-components/ImagePost/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/composer/utils/DOMUtils.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/web/components/App/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/queue/components/QueuedPosts/postData.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-web/shared/models/update_model.php",
+		"/Users/hamstu/buffer/buffer-dev/buffer-web/shared/config/push_messages.php",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/package_test.sh",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/server/webpack.config.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/shared-components/PostLists/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/components/Button/test.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/notifications/components/Notifications/test-harness.story.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/shared-components/PostList/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/Dockerfile.development",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/.babelrc",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/Dockerfile",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/web/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/server/webpack.config.dev.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/shared-components/index.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/server/rpc/queuedPosts/index.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/utils/buildPostMap.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/.jestrc.json",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/async-data-fetch/middleware.test.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/web/components/ProfilePage/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/shared-components/ScrollableContainer/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/tabs/components/TabNavigation/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/shared-components/PostFooter/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/components/style/color.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/shared-components/LinkPost/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/components/Link/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/components/MultipleImages/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/web/.babelrc",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/components/Text/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/components/Notification/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/app-sidebar/components/BufferLogo/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/components/PseudoClassComponent/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/app-sidebar/components/Popover/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/app-sidebar/components/Popover/story.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/app-sidebar/components/PopoverButton/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/app-sidebar/components/PopoverMenu/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/app-sidebar/components/AppSidebar/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/components/style/zIndex.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/components/Divider/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/web/package.json",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/app-sidebar/components/PopoverMenuItem/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/components/style/font.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/app-sidebar/components/AppSidebar/story.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/components/Icon/Icons/AvatarIcon.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/shared-components/DropdownTab/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/components/List/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/components/LinkStateless/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/components/Icon/Icons/GifIcon.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/components/Icon/Icons/index.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/app-sidebar/.storybook/preview-head.html",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/components/Icon/Icons/QuestionIcon.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/components/Popover/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/components/Icon/Icons/PublishIcon.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/components/lib/utils.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/components/lib/utils.test.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/example/components/LoggedIn/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/shared-components/PostFooterDelete/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/components/Icon/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/components/LinkifiedText/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/components/Button/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/components/Icon/Icons/AnalyzeIcon.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/shared-components/Tabs/story.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/components/Icon/story.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/components/Icon/Icons/ReplyIcon.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/app-sidebar/components/ProductButton/index.jsx",
+		"/Users/hamstu/buffer/buffer-icons/src/icons/publish.svg",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/components/ButtonStateless/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/components/index.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/app-sidebar/components/ProductButton/story.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/app-sidebar/index.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/app-sidebar/index.test.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/app-sidebar/package.json",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/app-sidebar/reducer.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/app-sidebar/reducer.test.js",
+		"/Users/hamstu/buffer/buffer-icons/src/icons/analyze.svg",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/profile-sidebar/components/ProfileSidebar/index.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/profile-sidebar/components/ProfileSidebar/story.jsx",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/profile-sidebar/.storybook/preview-head.html",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/profile-sidebar/middleware.test.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/profile-sidebar/index.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/README.md",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/shared-components/.storybook/config.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/web/.storybook/config.js",
+		"/Users/hamstu/buffer/buffer-dev/buffer-publish/packages/example/.storybook/config.js"
+	],
+	"find":
+	{
+		"height": 43.0
+	},
+	"find_in_files":
+	{
+		"height": 176.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "packages/desktop-app/src/store/middleware/lessons.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3931,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2052,
+								2052
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 977.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 71.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 210.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "code-companion.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"packages/pusher-sync/middleware.test.js"
+			],
+			[
+				"pusher/mi",
+				"packages/pusher-sync/middleware.js"
+			],
+			[
+				"pusher/mid",
+				"packages/pusher-sync/middleware.test.js"
+			],
+			[
+				"que/mid",
+				"packages/queue/middleware.test.js"
+			],
+			[
+				"postdragwr",
+				"packages/shared-components/PostDragWrapper/index.jsx"
+			],
+			[
+				"que/re",
+				"packages/queue/reducer.js"
+			],
+			[
+				"queue/red",
+				"packages/queue/reducer.js"
+			],
+			[
+				"que/red",
+				"packages/queue/reducer.js"
+			],
+			[
+				"packages/pusher-sync/middleware.js",
+				"packages/pusher-sync/middleware.js"
+			],
+			[
+				"packages/pusher-sync/middleware.test.js",
+				"packages/pusher-sync/middleware.test.js"
+			],
+			[
+				"rpc/in",
+				"packages/server/rpc/index.js"
+			],
+			[
+				"postdragla",
+				"packages/shared-components/PostDragLayer/index.jsx"
+			],
+			[
+				"packages/queue/reducer.js",
+				"packages/queue/reducer.js"
+			],
+			[
+				"packages/server/rpc/index.js",
+				"packages/server/rpc/index.js"
+			],
+			[
+				"profile-side/red",
+				"packages/profile-sidebar/reducer.js"
+			],
+			[
+				"profile-sid/red",
+				"packages/profile-sidebar/reducer.js"
+			],
+			[
+				"queubox",
+				"packages/queue/components/QueuePausedBar/index.jsx"
+			],
+			[
+				"not/midd",
+				"packages/notifications/middleware.js"
+			],
+			[
+				"profilepa",
+				"packages/utils/profileParser.js"
+			],
+			[
+				"mid",
+				"packages/queue/middleware.js"
+			],
+			[
+				"queu/re",
+				"packages/queue/reducer.js"
+			],
+			[
+				"quue/ind",
+				"packages/queue/index.js"
+			],
+			[
+				"pusher/",
+				"packages/pusher-sync/middleware.js"
+			],
+			[
+				"card/ind",
+				"packages/components/Card/index.jsx"
+			],
+			[
+				"post/ind",
+				"packages/shared-components/Post/index.jsx"
+			],
+			[
+				"textpost/ind",
+				"packages/shared-components/TextPost/index.jsx"
+			],
+			[
+				"textpost/in",
+				"packages/shared-components/TextPost/index.jsx"
+			],
+			[
+				"postp",
+				"packages/utils/postParser.js"
+			],
+			[
+				"post/index.js",
+				"packages/shared-components/Post/index.jsx"
+			],
+			[
+				"post/in",
+				"packages/shared-components/Post/index.jsx"
+			],
+			[
+				"videpo",
+				"packages/shared-components/VideoPost/index.jsx"
+			],
+			[
+				"multimp/in",
+				"packages/shared-components/MultipleImagesPost/index.jsx"
+			],
+			[
+				"imaegpost/",
+				"packages/shared-components/ImagePost/index.jsx"
+			],
+			[
+				"textpos",
+				"packages/shared-components/TextPost/index.jsx"
+			],
+			[
+				"queuite",
+				"packages/queue/components/QueueItems/index.jsx"
+			],
+			[
+				"imagepost/",
+				"packages/shared-components/ImagePost/index.jsx"
+			],
+			[
+				"queu/red",
+				"packages/queue/reducer.js"
+			],
+			[
+				"package_",
+				"package_test.sh"
+			],
+			[
+				"web",
+				"packages/server/webpack.config.js"
+			],
+			[
+				"postlists/ind",
+				"packages/shared-components/PostLists/index.jsx"
+			],
+			[
+				"postlist/ind",
+				"packages/shared-components/PostList/index.jsx"
+			],
+			[
+				"quee/ind",
+				"packages/queue/index.js"
+			],
+			[
+				"docker",
+				"Dockerfile.development"
+			],
+			[
+				"quereduc",
+				"packages/queue/reducer.js"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"app/ind",
+				"packages/web/components/App/index.jsx"
+			],
+			[
+				"dev.js",
+				"packages/server/webpack.config.dev.js"
+			],
+			[
+				"dev",
+				"packages/server/webpack.config.dev.js"
+			],
+			[
+				"shared-com/ind",
+				"packages/shared-components/index.js"
+			],
+			[
+				"package",
+				"package.json"
+			],
+			[
+				"postpa",
+				"packages/utils/postParser.js"
+			],
+			[
+				"queue/ind",
+				"packages/queue/index.js"
+			],
+			[
+				"buildpp",
+				"packages/utils/buildPostMap.js"
+			],
+			[
+				"jestrc",
+				".jestrc.json"
+			],
+			[
+				"babelrc",
+				".babelrc"
+			],
+			[
+				"server/webpac",
+				"packages/server/webpack.config.js"
+			],
+			[
+				"webpack",
+				"packages/server/webpack.config.js"
+			],
+			[
+				"server/web",
+				"packages/server/webpack.config.js"
+			],
+			[
+				"style/col",
+				"packages/components/style/color.js"
+			],
+			[
+				"videopost/nd",
+				"packages/shared-components/VideoPost/index.jsx"
+			],
+			[
+				"linkpos/in",
+				"packages/shared-components/LinkPost/index.jsx"
+			],
+			[
+				"multipimapo/in",
+				"packages/shared-components/MultipleImagesPost/index.jsx"
+			],
+			[
+				"imagepost/in",
+				"packages/shared-components/ImagePost/index.jsx"
+			],
+			[
+				"videopo/in",
+				"packages/shared-components/VideoPost/index.jsx"
+			],
+			[
+				"linkpo/ind",
+				"packages/shared-components/LinkPost/index.jsx"
+			],
+			[
+				"multiplimgpost/in",
+				"packages/shared-components/MultipleImagesPost/index.jsx"
+			],
+			[
+				"multipim/ind",
+				"packages/components/MultipleImages/index.jsx"
+			],
+			[
+				"webpack.conf",
+				"packages/server/webpack.config.js"
+			],
+			[
+				"server/ind",
+				"packages/server/index.js"
+			],
+			[
+				"postdrag",
+				"packages/shared-components/PostDragWrapper/index.jsx"
+			],
+			[
+				"text/ind",
+				"packages/components/Text/index.jsx"
+			],
+			[
+				"pseud",
+				"packages/components/PseudoClassComponent/index.jsx"
+			],
+			[
+				"zin",
+				"packages/components/style/zIndex.js"
+			],
+			[
+				"divied",
+				"packages/components/Divider/index.jsx"
+			],
+			[
+				"menuite",
+				"packages/app-sidebar/components/PopoverMenuItem/index.js"
+			],
+			[
+				"div",
+				"packages/components/Divider/index.jsx"
+			],
+			[
+				"style/fon",
+				"packages/components/style/font.js"
+			],
+			[
+				"color",
+				"packages/components/style/color.js"
+			],
+			[
+				"pseudo",
+				"packages/components/PseudoClassComponent/index.jsx"
+			],
+			[
+				"avart",
+				"packages/components/Icon/Icons/AvatarIcon.jsx"
+			],
+			[
+				"list/ind",
+				"packages/components/List/index.jsx"
+			],
+			[
+				"linkst",
+				"packages/components/LinkStateless/index.jsx"
+			],
+			[
+				"link/in",
+				"packages/components/Link/index.jsx"
+			],
+			[
+				"divi",
+				"packages/components/Divider/index.jsx"
+			],
+			[
+				"icon",
+				"packages/components/Icon/Icons/GifIcon.jsx"
+			],
+			[
+				"queti",
+				"packages/components/Icon/Icons/QuestionIcon.jsx"
+			],
+			[
+				"psue/",
+				"packages/components/PseudoClassComponent/index.jsx"
+			],
+			[
+				"col",
+				"packages/components/style/color.js"
+			],
+			[
+				"popover",
+				"packages/components/Popover/index.jsx"
+			],
+			[
+				"colo",
+				"packages/components/style/color.js"
+			],
+			[
+				"psue/ind",
+				"packages/components/PseudoClassComponent/index.jsx"
+			],
+			[
+				"pseudocl",
+				"packages/components/PseudoClassComponent/index.jsx"
+			],
+			[
+				"icon/ind",
+				"packages/components/Icon/index.jsx"
+			],
+			[
+				"find",
+				"Find Results"
+			],
+			[
+				"util",
+				"packages/components/lib/utils.js"
+			],
+			[
+				"publishicon",
+				"packages/components/Icon/Icons/PublishIcon.jsx"
+			],
+			[
+				"lib/ut",
+				"packages/components/lib/utils.js"
+			],
+			[
+				"analy",
+				"packages/components/Icon/Icons/AnalyzeIcon.jsx"
+			],
+			[
+				"icon/icons/ind",
+				"packages/components/Icon/Icons/index.js"
+			],
+			[
+				"icons/ind",
+				"packages/components/Icon/Icons/index.js"
+			],
+			[
+				"ut",
+				"packages/components/lib/utils.js"
+			],
+			[
+				"divider",
+				"packages/components/Divider/index.jsx"
+			],
+			[
+				"c",
+				"packages/components/style/color.js"
+			],
+			[
+				"color.",
+				"packages/components/style/color.js"
+			],
+			[
+				"read",
+				"README.md"
+			],
+			[
+				"dock",
+				"Dockerfile.development"
+			],
+			[
+				"loggedin",
+				"packages/example/components/LoggedIn/index.jsx"
+			],
+			[
+				"conetn_con",
+				"app/webroot/js/content/content_controller.js"
+			],
+			[
+				"profile.js",
+				"app/webroot/js/app/models/profile.js"
+			],
+			[
+				"user_mod",
+				"shared/models/user_model.php"
+			],
+			[
+				"organ_mo",
+				"shared/models/organization_model.php"
+			],
+			[
+				"app.les",
+				"app/less/app.less"
+			],
+			[
+				"content_con",
+				"app/webroot/js/content/content_controller.js"
+			],
+			[
+				"profile_mod",
+				"shared/models/profile_model.php"
+			],
+			[
+				"profiles_co",
+				"api/controllers/profiles_controller.php"
+			],
+			[
+				"profile_mo",
+				"shared/models/profile_model.php"
+			],
+			[
+				"orghelp",
+				"shared/helpers/organization_helper.php"
+			],
+			[
+				"eins",
+				"shared/libraries/Einstein.php"
+			],
+			[
+				"user_mo",
+				"shared/models/user_model.php"
+			],
+			[
+				"ein",
+				"shared/libraries/Einstein.php"
+			],
+			[
+				"user",
+				"shared/models/user_model.php"
+			],
+			[
+				"moc",
+				"app/controllers/mock.php"
+			],
+			[
+				"app.p",
+				"app/controllers/app.php"
+			],
+			[
+				"index.php",
+				"app/views/app/index.php"
+			],
+			[
+				"menupr",
+				"app/webroot/js/shared/views/menuProfile.js"
+			],
+			[
+				"mock",
+				"app/controllers/mock.php"
+			],
+			[
+				"broadcas",
+				"shared/libraries/Broadcasters/Broadcaster.php"
+			],
+			[
+				"update_wor",
+				"shared/libraries/Workers/Update_worker.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/buffer/buffer-dev/buffer-web/buffer-web.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 269.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
