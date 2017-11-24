@@ -106,7 +106,7 @@ const parser = {
   readAndParse,
 };
 
-const doc = '/Users/hamstu/Library/Application Support/code-companion/lessons/welcome-to-code-companion/lesson.md';
-(async () => { console.log(await parser.readAndParse(doc)); })();
+// const doc = '/Users/hamstu/Library/Application Support/code-companion/lessons/welcome-to-code-companion/lesson.md';
+// (async () => { console.log(await parser.readAndParse(doc)); })();
 
 module.exports = parser;
