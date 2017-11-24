@@ -56,11 +56,18 @@ const splitIntoSlides = (doc) => {
   const $ = cheerio.load(doc);
   const slides = $('slide').toArray().map((node, index) => {
     const id = node.attribs.id ? node.attribs.id : `slide-${index + 1}`;
+
     const html = node.children[0].data;
     const content = parseContent(html);
+
+    const findOverlay = node.children.filter(child => child.name === 'overlay');
+    const overlayNode = findOverlay.length ? findOverlay[0] : null;
+    const overlay = overlayNode ? parseContent(overlayNode.children[0].data) : false;
+
     return {
       id,
       content,
+      overlay,
     };
   });
   return slides;

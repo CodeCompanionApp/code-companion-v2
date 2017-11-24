@@ -7,6 +7,7 @@ import { push } from 'react-router-redux';
 import { ipcRenderer } from 'electron';
 
 import { actionTypes as settingsActionTypes } from '../reducers/settings';
+import { actionTypes as appActionTypes } from '../reducers/app';
 import { actionTypes } from '../reducers/lessons';
 
 const asyncReadFile = promisify(fs.readFile);
@@ -43,11 +44,11 @@ const discoverLessons = async (searchPath, settings, dispatch) => {
   const lessonsData = await getLessons(potentialLessonDirs);
   const validLessons = lessonsData.filter(lesson => lesson);
 
-  dispatch({ type: 'LESSONS_LOADED', payload: { lessons: validLessons } });
+  dispatch({ type: actionTypes.LESSONS_LOADED, payload: { lessons: validLessons } });
   console.log(lessonsData);
 };
 
-const findExistingWorkspaces = async (workspacePath, lessonWorkspaceName) => {
+export const findExistingWorkspaces = async (workspacePath, lessonWorkspaceName) => {
   const directoryGlob = `${lessonWorkspaceName}*/`;
   const glob = path.join(workspacePath, directoryGlob);
   const paths = await globby(glob);
@@ -83,12 +84,35 @@ const createLessonWorkspace = async (workspacePath, lessonWorkspaceName) => {
   return finalWorkspaceName;
 };
 
+async function handleCreateWorkspace({ settings, action, dispatch }) {
+  const workspaceName = await createLessonWorkspace(
+    settings.workspacePath,
+    action.lesson.workspaceName,
+  );
+  if (workspaceName) {
+    dispatch({
+      type: actionTypes.LESSON_CREATE_WORKSPACE_COMPLETE,
+      lessonId: action.lesson.id,
+      workspaceName,
+    });
+    dispatch(push(`/lesson/${action.lesson.id}/${workspaceName}`));
+    return;
+  }
+  dispatch({
+    type: actionTypes.LESSON_CREATE_WORKSPACE_FAILED,
+    lessonId: action.lesson.id,
+  });
+}
+
 const events = [];
 
-export default ({ getState, dispatch }) => next => async (action) => {
+export default ({ getState, dispatch }) => next => (action) => {
   next(action);
   const { settings: { appData, settings } } = getState();
   switch (action.type) {
+    case actionTypes.LESSONS_LOADED:
+      dispatch({ type: appActionTypes.APP_READY });
+      break;
     case actionTypes.LESSON_LOAD: {
       const { lessonId } = action;
       const { lessons: { byId: lessons } } = getState();
@@ -98,26 +122,9 @@ export default ({ getState, dispatch }) => next => async (action) => {
       }
       break;
     }
-    case actionTypes.LESSON_CREATE_WORKSPACE: {
-      const workspaceName = await createLessonWorkspace(
-        settings.workspacePath,
-        action.lesson.workspaceName,
-      );
-      if (workspaceName) {
-        dispatch({
-          type: actionTypes.LESSON_CREATE_WORKSPACE_COMPLETE,
-          lessonId: action.lesson.id,
-          workspaceName,
-        });
-        dispatch(push(`/lesson/${action.lesson.id}/${workspaceName}`));
-        return;
-      }
-      dispatch({
-        type: actionTypes.LESSON_CREATE_WORKSPACE_FAILED,
-        lessonId: action.lesson.id,
-      });
+    case actionTypes.LESSON_CREATE_WORKSPACE:
+      handleCreateWorkspace({ settings, action, dispatch });
       break;
-    }
     // We need both of the next actions to happen before we load the lessons
     // so we keep track of them with the `events` array...
     case settingsActionTypes.APP_PATHS_LOADED:

@@ -1,15 +1,21 @@
 body {
-  background: #ECEFF1;
+  background: #fff;
 }
 body, pre {
   font-family: 'Barlow';
   margin: 0;
+  padding-top: 23px;
   overflow-x: hidden;
   color: #201909;
 }
 
-pre {
-  color: #777;
+a {
+  color: #2196F3;
+}
+
+pre, code {
+  opacity: 0.8;
+  font-family: 'Monaco';
 }
 
 /* barlow-100 - latin */

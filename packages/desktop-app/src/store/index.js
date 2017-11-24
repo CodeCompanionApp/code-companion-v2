@@ -6,6 +6,7 @@ import createReducer from './reducers';
 import ipcMiddleware from './middleware/ipc';
 import lessonsMiddleware from './middleware/lessons';
 import settingsMiddleware from './middleware/settings';
+import appMiddleware from './middleware/app';
 
 export const history = createHistory();
 
@@ -16,6 +17,7 @@ const makeStore = () => {
     reducer,
     compose(
       applyMiddleware(
+        appMiddleware,
         routerMiddleware(history),
         ipcMiddleware,
         lessonsMiddleware,

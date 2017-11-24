@@ -1,0 +1,19 @@
+.container {
+  background: #29272e;
+  -webkit-app-region: drag;
+  -webkit-user-select: none;
+  cursor: default;
+  height: 23px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.logoText {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 3px;
+};

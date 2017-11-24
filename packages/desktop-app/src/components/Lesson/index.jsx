@@ -11,7 +11,13 @@ const loadLesson = (lessonId, dispatch) => {
   });
 };
 
+function createMarkup(html) { return { __html: html }; }
+
 class Lesson extends Component {
+  state = {
+    currentSlideIndex: 0,
+  }
+
   componentDidMount() {
     const { match: { params: { lessonId } } } = this.props;
     loadLesson(lessonId, this.props.dispatch);
@@ -24,11 +30,12 @@ class Lesson extends Component {
     }
   }
   render() {
-    const { match, lesson } = this.props;
+    const { lesson } = this.props;
+    const { currentSlideIndex } = this.state;
     return (
+      lesson.loaded &&
       <div>
-        <pre>{JSON.stringify(match.params, null, 2)}</pre>
-        <pre>{JSON.stringify(lesson, null, 2)}</pre>
+        <div dangerouslySetInnerHTML={createMarkup(lesson.data.slides[currentSlideIndex].content)} />
       </div>
     );
   }
@@ -45,7 +52,7 @@ Lesson.propTypes = {
 };
 
 Lesson.defaultProps = {
-  lesson: null,
+  lesson: { loaded: false },
 };
 
 const mapStateToProps = (state, { match }) => ({

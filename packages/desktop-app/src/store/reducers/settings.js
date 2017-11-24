@@ -5,6 +5,7 @@ export const actionTypes = {
   APP_SETTINGS_LOADED: 'APP_SETTINGS_LOADED',
   SETTINGS_SET_WORKSPACE_PATH: 'SETTINGS_SET_WORKSPACE_PATH',
   SAVE_SETTINGS: 'SAVE_SETTINGS',
+  EXISTING_WORKSPACES_UPDATED: 'EXISTING_WORKSPACES_UPDATED',
 };
 
 const initialState = {
@@ -38,15 +39,23 @@ export default (state = initialState, action) => {
       };
     case lessonsActionTypes.LESSON_CREATE_WORKSPACE_COMPLETE: {
       const { lessonId, workspaceName } = action;
-      const settings = { ...state.settings };
-      settings.workspaces = settings.workspaces || {};
-      const currentLessonWorkspaces = settings.workspaces[lessonId] || [];
-      settings.workspaces[lessonId] = [...currentLessonWorkspaces, workspaceName];
+      const { settings: { workspaces: currentWorkspaces = [] } } = state;
       return {
         ...state,
-        settings,
+        settings: {
+          ...state.settings,
+          workspaces: [...currentWorkspaces, { lessonId, folder: workspaceName }],
+        },
       };
     }
+    case actionTypes.EXISTING_WORKSPACES_UPDATED:
+      return {
+        ...state,
+        settings: {
+          ...state.settings,
+          workspaces: action.workspaces,
+        },
+      };
     default:
       return state;
   }

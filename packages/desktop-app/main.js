@@ -7,12 +7,13 @@ import path from 'path';
 import url from 'url';
 
 import { actionTypes as settingsActionTypes } from './src/store/reducers/settings';
+import { actionTypes as lessonsActionTypes } from './src/store/reducers/lessons';
+
 import settings from './lib/settings';
 
 const isDevelopment = process.env.NODE_ENV === 'development';
 
 let mainWindow;
-let workerWindow;
 
 function createWindow() {
   installExtension([REDUX_DEVTOOLS]);
@@ -56,12 +57,18 @@ function createWindow() {
     }
     ipcMain.on('action', (event, action) => {
       if (action.type === settingsActionTypes.SAVE_SETTINGS) {
-        console.log('main got SAVE_SETTINGS', action);
         settings.save(appSettingsPath, action.settings);
       }
     });
     ipcMain.on('load-lesson', (event, lesson) => {
       global.workerWindow.webContents.send('load-lesson', lesson);
+    });
+    ipcMain.on('load-lesson-complete', (event, lessonData) => {
+      mainWindow.webContents.send('dispatch', {
+        type: lessonsActionTypes.LESSON_LOAD_COMPLETE,
+        lessonData,
+        lessonId: lessonData.lessonId,
+      });
     });
   });
 
@@ -87,7 +94,7 @@ function createWorkerWindow() {
   });
   global.workerWindow.loadURL(workerHtml);
   global.workerWindow.webContents.on('did-finish-load', () => {
-    global.workerWindow.webContents.openDevTools();
+    // global.workerWindow.webContents.openDevTools();
   });
 }
 

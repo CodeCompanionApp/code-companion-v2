@@ -30,10 +30,3 @@ A lesson is a directory containing the following:
 
 ### The Markdown format
 
-Each lesson is written in a simple Markdown format, parsed by the `remarkable` node package. The lesson will be divided into slides by a separator `---`, with each slide showing in sequential order.
-
-Elements of a lesson:
-
-- Each slide has a title, text & images (optional), and a previous / next button
-- Some slides have a pre-condition before you can continue to the next step
-- Each slide can (should?) have content that will show in the 'HUD' / always visible overlay.

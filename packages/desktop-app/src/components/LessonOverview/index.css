@@ -1,7 +1,33 @@
 .container {
-    padding: 1rem;
 }
 
 .lessonName {
     font-size: 1.4rem;
+}
+
+.metaData {
+    color: #666;
+}
+
+.workspacesTable {
+    width: 100%;
+    margin: 25px 0;
+    padding: 0;
+}
+
+.workspacesTableHeader {
+    text-align: left;
+    font-weight: 500;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.workspacesTableRow {
+    padding: 5px 0;
+}
+
+.workspacesTableButtonRow {
+    text-align: right;
+    padding: 20px 0;
 }

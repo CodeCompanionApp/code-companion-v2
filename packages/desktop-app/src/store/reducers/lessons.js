@@ -4,6 +4,7 @@ export const actionTypes = {
   LESSON_CREATE_WORKSPACE_COMPLETE: 'LESSON_CREATE_WORKSPACE_COMPLETE',
   LESSON_CREATE_WORKSPACE_FAILED: 'LESSON_CREATE_WORKSPACE_FAILED',
   LESSON_LOAD: 'LESSON_LOAD',
+  LESSON_LOAD_COMPLETE: 'LESSON_LOAD_COMPLETE',
 };
 
 const initialState = {
@@ -30,6 +31,21 @@ export default (state = initialState, action) => {
         byId: {
           ...state.byId,
           [action.lessonId]: { ...state.byId[lessonId], loading: true },
+        },
+      };
+    }
+    case actionTypes.LESSON_LOAD_COMPLETE: {
+      const { lessonId, lessonData } = action;
+      return {
+        ...state,
+        byId: {
+          ...state.byId,
+          [action.lessonId]: {
+            ...state.byId[lessonId],
+            loading: false,
+            loaded: true,
+            data: lessonData,
+          },
         },
       };
     }

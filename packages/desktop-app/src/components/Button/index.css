@@ -1,14 +1,32 @@
 .button {
     font-family: Barlow;
-    font-size: inherit;
-    background: #2196F3;
-    border: 0;
-    border-radius: 4px;
-    color: #fff;
-    padding: 0.25rem 2rem;
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #2196F3;
+    background: transparent;
+
     outline: none;
-    &[disabled] {
-        pointer-events: none;
-        background: #ccc;
+    border: 2px solid #2196F3;
+    border-radius: 4px;
+
+    padding: 0.45rem 2rem;
+    transition: all .1s ease-out;
+
+    &:hover {
+        background: #2196F3;
+        color: #fff;
     }
+
+    &:active {
+        background: darken(#2196F3, 20%);
+        border-color: darken(#2196F3, 20%);
+        color: #fff;
+        transform: translateY(1px);
+    }
+}
+
+.button[disabled], .button--disabled {
+    pointer-events: none;
+    background: #ccc;
 }
