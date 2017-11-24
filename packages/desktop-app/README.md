@@ -14,4 +14,4 @@ You will be prompted to choose a workspace path, which is where you will keep co
 
 When the application finishes loading press <kbd>Ctrl (or Cmd)</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> to open the Chrome DevTools, check the _Console_ tab for a message that says `Going to search` which is followed by the search path for lessons. Copy or note this path down.
 
-Create the `lessons` folder at that path and then `cd` into it so you can `git pull` down the sample Code Companion lesson from this repository. Now when you reload or restart the app you should be able to see and start your lesson.
+Create the `lessons` folder at that path and then `cd` into it so you can `git pull` down the [sample Code Companion lesson from this repository](https://github.com/CodeCompanionApp/code-companion-lessons). Now when you reload or restart the app you should be able to see and start your lesson.
